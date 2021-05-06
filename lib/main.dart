@@ -64,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future downloadFile() async {
+    //using a URL with hardcoced values for workorder and documentid
     var  fileUrl='https://ctisaas.com:9300/ct/csaas/admin/api/v1/workOrder/8292/document/15921/download';
 
     final prefs = await SharedPreferences.getInstance();
